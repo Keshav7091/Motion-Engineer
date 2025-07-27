@@ -25,7 +25,7 @@ const Navbar = () => {
   ];
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-black py-5 bg-gradient-to-b from-black to-black/80 shadow-lg border-b border-gold-accent/10">
+    <header className="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-black py-5 bg-gradient-to-b from-black to-black/80 shadow-lg border-b ">
       <div className="absolute top-0 left-0 w-full h-[1px] overflow-hidden opacity-30">
         <div className="w-1/2 h-full bg-gradient-to-r from-transparent via-[#eefb7b]/30 to-transparent"></div>
       </div>

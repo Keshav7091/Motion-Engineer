@@ -11,7 +11,7 @@ import WhyChooseUs from '../components/WhyChooseUs';
 const Home = () => {
 
   return (
-    <>
+    <div className='pt-16'>
       <SectionWrapper index={-1}>
         <LandingHero />
       </SectionWrapper>
@@ -34,7 +34,7 @@ const Home = () => {
       <SectionWrapper index={3}>
         <WhyChooseUs />
       </SectionWrapper>
-    </>
+    </div>
   )
 }
 
