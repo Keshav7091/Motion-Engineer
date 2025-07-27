@@ -1,4 +1,5 @@
 import React from 'react'
+import AnimatedCounter from '../components/AnimatedCounter';
 
 
 const TrustedBy = () => {
@@ -101,16 +102,16 @@ const review = [
               </div>
             </div>
 
-            <div className='mt-12 text-center p-8 rounded-xl opacity-100 transform-none'>
+            <div className='mt-12 text-center p-8 rounded-xl'>
               <div className='flex flex-col md:flex-row justify-center items-center gap-8 md:gap-16'>
-                  {review.map((review) => (
-                    <div key={review.id} className='text-center'>
-                      <span className='block text-4xl md:text-5xl font-bold text-[#eefb7b] mb-1 font-montserrat'>
-                        <span className='inline-block'>{review.count} {review.icon}</span>
-                      </span>
-                      <span className='text-gray-light text-sm uppercase tracking-wider font-roboto'>{review.name}</span>
-                    </div>
-                  ))}
+                {review.map((item) => (
+                  <AnimatedCounter
+                    key={item.id}
+                    end={item.count}
+                    icon={item.icon}
+                    name={item.name}
+                  />
+                ))}
               </div>
             </div>
             
