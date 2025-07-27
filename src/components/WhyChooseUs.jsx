@@ -5,7 +5,7 @@ import { LuExternalLink } from "react-icons/lu";
 
 const WhyChooseUs = () => {
   return (
-    <section className="py-32 bg-gradient-to-br relative overflow-hidden">
+    <section className="py-32 bg-black-theme-poor bg-gradient-to-br relative overflow-hidden">
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute top-0 left-0 w-[100vw] h-full opacity-40">
           <div className="absolute top-0 left-0 w-[100vw] h-[5px] bg-gradient-to-r from-transparent via-[#eefb7b]/30 to-transparent"></div>
@@ -43,7 +43,7 @@ const WhyChooseUs = () => {
 
               <Link
                 to="/portfolio"
-                className="flex items-center gap-2 px-10 py-7 h-11 rounded-md border border-[#eefb7b]/40 bg-transparent text-[#eefb7b] text-lg font-montserrat tracking-wide transition-all duration-300 hover:bg-[#eefb7b]/5 hover:text-black"
+                className="flex items-center gap-2 px-10 py-7 h-11 rounded-md border border-[#eefb7b]/40 bg-transparent text-[#eefb7b] text-lg font-montserrat tracking-wide transition-all duration-300 hover:bg-[#eefb7b]/5 hover:text-[#eefb7b]/80"
               >
                 <span>View Our Work</span>
                 <LuExternalLink className="text-xl" />

@@ -15,7 +15,7 @@ const About = () => {
   return (
     <div className='pt-16'>
       <VideoPlay videoSrc={AboutV} />
-      <section className='py-24 bg-black text-white'>
+      <section className='py-24 bg-black-theme-rich text-white'>
           <div className='container mx-auto px-4 md:px-6'>
             <div className='grid md:grid-cols-2 gap-12 items-center'>
               <div className='prose prose-invert max-w-none'>
@@ -73,7 +73,7 @@ const About = () => {
           </div>
       </section>
 
-      <section className='py-24 bg-black text-white relative overflow-hidden'>
+      <section className='py-24 bg-black-theme-poor text-white relative overflow-hidden'>
         <div className='absolute inset-0 bg-black/70 z-0'></div>
         <div className='absolute top-0 left-0 w-full h-[2px] overflow-hidden'>
           <div className='w-1/2 h-full bg-gradient-to-r from-transparent via-[#eefb7b]/70 to-transparent animate-gold-pulse'></div>

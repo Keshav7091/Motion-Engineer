@@ -68,7 +68,7 @@ const review = [
 ]
 
   return (
-    <section className="py-24">
+    <section className="py-24 bg-black-theme-rich">
       <div className='container mx-auto px-4 md:px-6'>
         <div className='text-center max-w-3xl mx-auto mb-16 opacity-100 transform-none'>
           <h2 className='text-sm uppercase tracking-widest text-[#dfff59] mb-4 font-montserrat'>Our Clients</h2>

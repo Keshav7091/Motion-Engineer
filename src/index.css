@@ -8,6 +8,10 @@ body {
   overflow-y: scroll;
 }
 
+body::-webkit-scrollbar {
+  display: none;
+}
+
 
 .font-poppins {
   font-family: 'Poppins', sans-serif;
@@ -26,11 +30,23 @@ body {
 }
 
 
+.bg-black-theme-rich{
+  background-color: #0a0a0a;
+  color: white;
+}
 
+.bg-black-theme-poor{
+  background-color: black;
+  color: white;
+}
+
+/* .container {
+  @apply max-w-[1400px] mx-auto px-6;
+}
 
 .container {
-  @apply max-w-[1400px] mx-auto px-4;
-}
+  @apply max-w-[1200px] mx-auto px-15;
+} */
 
 /* Custom Scrollbar */
 ::-webkit-scrollbar {
@@ -54,4 +70,25 @@ body {
 .shadow-text {
   color: #dfff59;
   text-shadow: 0 0 1px #dfff59, 0 0 3px #dfff59;
+}
+
+
+.container {
+  max-width: 1400px;
+  padding-left: 1.5rem;  /* px-6 */
+  padding-right: 1.5rem;
+}
+
+@media (max-width: 1400px) {
+  .container {
+    padding-left: 3.75rem; /* px-15 = 60px */
+    padding-right: 3.75rem;
+  }
+}
+
+@media (max-width: 1200px) {
+  .container {
+    padding-left: 4.5rem; /* px-10 */
+    padding-right: 4.5rem;
+  }
 }

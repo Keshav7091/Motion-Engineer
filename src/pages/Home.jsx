@@ -1,5 +1,4 @@
 import React from 'react'
-import SectionWrapper from "../components/SectionWrapper";
 import LandingHero from '../components/LandingHero'
 import CompanyIntro from '../components/CompanyIntro'
 import OurServices from '../components/OurServices';
@@ -12,28 +11,14 @@ const Home = () => {
 
   return (
     <div className='pt-16'>
-      <SectionWrapper index={-1}>
-        <LandingHero />
-      </SectionWrapper>
       
-
-      <SectionWrapper index={0}>
-        <CompanyIntro />
-      </SectionWrapper>
-
-      <SectionWrapper index={1}>
-        <OurServices />
-      </SectionWrapper>
-
-      <SectionWrapper index={2}>
-        <TrustedBy />
-      </SectionWrapper>
-
+      <LandingHero />
+      <CompanyIntro />
+      <OurServices />
+      <TrustedBy />
       <ProjectHighlights />
-
-      <SectionWrapper index={3}>
-        <WhyChooseUs />
-      </SectionWrapper>
+      <WhyChooseUs />
+      
     </div>
   )
 }

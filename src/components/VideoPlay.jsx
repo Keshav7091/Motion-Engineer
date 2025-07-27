@@ -2,7 +2,7 @@ import React from 'react';
 
 const VideoPlay = ({ videoSrc }) => {
   return (
-    <section className='relative py-6 sm:py-8 md:py-12 bg-black text-white'>
+    <section className='relative py-6 sm:py-8 md:py-12 text-white'>
       <div className='container mx-auto px-2 sm:px-4 md:px-6'>
         <div className='max-w-3xl mx-auto'>
           <div className='w-full max-w-2xl mx-auto rounded overflow-hidden shadow-gold'>

@@ -97,7 +97,7 @@ const Services = () => {
     <div className="pt-16">
       <VideoPlay videoSrc={servicesV} />
 
-      <section className="py-24 bg-black-theme-pure">
+      <section className="py-24 bg-black-theme-poor">
         <div className="container mx-auto px-4 md:px-6">
           <div className="text-center max-w-3xl mx-auto mb-16">
             <p className="text-gray-light font-roboto">
@@ -147,7 +147,7 @@ const Services = () => {
         </div>
       </section>
 
-      <section className="py-24 bg-black">
+      <section className="py-24 bg-black-theme-rich">
         <div className="container mx-auto px-4 md:px-6">
           <div className="text-center max-w-3xl mx-auto mb-16">
             <h2 className="text-sm uppercase tracking-widest text-[#eefb7b] mb-4 font-montserrat">
@@ -163,15 +163,24 @@ const Services = () => {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-            {processSteps.map((step) => (
-              <div key={step.step} className="relative">
-                <div className="flex items-center justify-center w-16 h-16 rounded-full bg-black-theme-card text-xl font-bold text-[#eefb7b] mb-6 border border-[#eefb7b]/30">{step.step}</div>
-                <div className="absolute top-8 left-16 w-full h-0.5 bg-[#eefb7b]/20 hidden md:block"></div>
-                <h4 className="text-xl font-semibold font-montserrat mb-3 text-white-theme-pure">{step.title}</h4>
-                <p className="text-gray-light font-roboto">{step.description}</p>
-              </div>
-            ))}
-          </div>
+              {processSteps.map((step, index) => (
+                <div key={step.step} className="relative">
+                  <div className="flex items-center justify-center w-16 h-16 rounded-full bg-black-theme-card text-xl font-bold text-[#eefb7b] mb-6 border border-[#eefb7b]/30">
+                    {step.step}
+                  </div>
+
+                  {index !== processSteps.length - 1 && (
+                    <div className="absolute top-8 left-16 w-full h-0.5 bg-[#eefb7b]/20 hidden md:block"></div>
+                  )}
+
+                  <h4 className="text-xl font-semibold font-montserrat mb-3 text-white-theme-pure">
+                    {step.title}
+                  </h4>
+                  <p className="text-gray-light font-roboto">{step.description}</p>
+                </div>
+              ))}
+            </div>
+
 
           <div className="mt-16 text-center">
             <Link to="/contact" className="font-montserrat">

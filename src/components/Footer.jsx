@@ -8,7 +8,7 @@ import { li } from "framer-motion/client";
 
 const Footer = () => {
   return (
-    <footer className="bg-black text-white pt-16 pb-8 relative">
+    <footer className="bg-black-theme-poor text-white pt-16 pb-8 relative">
       <div className="absolute top-0 left-0 w-full h-[2px] overflow-hidden">
         <div className="w-full h-full bg-gradient-to-r from-transparent via-[#eefb7b]/70 to-transparent animate-gold-pulse"></div>
       </div>
@@ -45,27 +45,22 @@ const Footer = () => {
             </h3>
 
             <ul className="space-y-3">
-              {[
-                "Home",
-                "About Us",
-                "Services",
-                "Portfolio",
-                "Careers",
-                "Contact",
-              ].map((item, index) => (
-                <li key={index}>
-                  <Link
-                    to={
-                      item === "Home"
-                        ? "/"
-                        : `/${item.toLowerCase().replace(/\s/g, "")}`
-                    }
-                    className="text-gray-light hover:text-[#eefb7b] font-roboto hover:translate-x-1 inline-block transition-transform"
-                  >
-                    {item}
-                  </Link>
-                </li>
-              ))}
+              {["Home", "About Us", "Services", "Contact"].map(
+                (item, index) => (
+                  <li key={index}>
+                    <Link
+                      to={
+                        item === "Home"
+                          ? "/"
+                          : `/${item.toLowerCase().replace(/\s/g, "")}`
+                      }
+                      className="text-gray-light hover:text-[#eefb7b] font-roboto hover:translate-x-1 inline-block transition-transform"
+                    >
+                      {item}
+                    </Link>
+                  </li>
+                )
+              )}
             </ul>
           </div>
 

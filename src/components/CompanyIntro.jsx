@@ -5,7 +5,7 @@ import Button from "./Button";
 
 const CompanyIntro = () => {
   return (
-    <section className="text-white py-24 px-4 text-center">
+    <section className="text-white bg-black-theme-rich py-24 px-4 text-center">
       <div className="container max-w-4xl mx-auto">
         <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold font-montserrat mb-8 leading-tight">
           We don't just create campaigns— <br />we engineer movements.

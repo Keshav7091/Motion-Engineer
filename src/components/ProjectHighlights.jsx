@@ -1,5 +1,6 @@
 import React from "react";
 import { FiArrowRight } from "react-icons/fi";
+import { Link } from "react-router-dom"
 
 const ProjectHighlights = () => {
   const expertiseHighlights = [
@@ -12,19 +13,19 @@ const ProjectHighlights = () => {
     },
     {
       icon: "💡",
-      title: "Creative Strategies",
-      subtitle: "Innovation Meets Impact",
+      title: "All-in-One Studio",
+      subtitle: "Seamless End-to-End Creation",
       description:
-        "We bring unique ideas that turn heads and drive real results.",
-      highlight: "100+ viral campaigns executed",
+        "From ideation to production, everything happens in-house.",
+      highlight: "100% in-house production",
     },
     {
       icon: "🚀",
-      title: "Performance Driven",
-      subtitle: "Focused on ROI",
+      title: "PAN INDIA Studios & Academy",
+      subtitle: "Strategic Locations & Resources",
       description:
-        "Every step we take is backed by data and focused on outcomes.",
-      highlight: "5x Average Return on Investment",
+        "Headquarters in Delhi & Mumbai — Built for creativity, optimized for results.",
+      highlight: "2 flagship studios",
     },
   ];
 
@@ -53,36 +54,14 @@ const ProjectHighlights = () => {
       </div>
 
       {/** Boxes in Background */}
-      <div className="absolute top-20 left-20 border border-[#eefb7b]/20 w-32 h-32 animate-float-delay"></div>
-      <div className="absolute bottom-20 right-20 border border-[#eefb7b]/20 w-48 h-48 animate-float"></div>
-      <div className="absolute top-1/2 left-0 w-96 h-96 bg-gradient-to-r from-[#eefb7b]/10 to-transparent blur-3xl rounded-full"></div>
-      <div className="absolute bottom-10 left-1/4 w-24 h-24 border border-[#eefb7b]/30 rounded-full"></div>
-      <div className="absolute top-10 right-1/4 w-20 h-20 border border-[#eefb7b]/30"></div>
-      <div className="absolute top-1/3 right-0 w-80 h-80 bg-gradient-to-l from-[#eefb7b]/5 to-transparent blur-3xl rounded-full"></div>
+      <div className="absolute top-20 left-20 border border-[#eefb7b]/5 w-32 h-32 animate-float-delay"></div>
+      <div className="absolute bottom-20 right-20 border border-[#eefb7b]/5 w-48 h-48 animate-float"></div>
+      <div className="absolute top-1/2 left-0 w-96 h-96 bg-gradient-to-r from-[#eefb7b]/5 to-transparent blur-3xl rounded-full"></div>
+      <div className="absolute bottom-10 left-1/4 w-24 h-24 border border-[#eefb7b]/5 rounded-full"></div>
+      <div className="absolute top-10 right-1/4 w-20 h-20 border border-[#eefb7b]/5"></div>
+      <div className="absolute top-1/3 right-0 w-80 h-80 bg-gradient-to-l from-[#eefb7b]/5to-transparent blur-3xl rounded-full"></div>
 
-      {/* <div class="absolute inset-0 overflow-hidden opacity-30">
-        <div
-          class="absolute bg-[#eefb7b]/30 rounded-full"
-          style="top: 74.0589%; left: 20.0638%; width: 2.90234px; height: 4.77572px; animation: 6.85558s ease-in-out 0s infinite alternate none running float;"
-        ></div>
-        <div
-          class="absolute bg-[#eefb7b]/30 rounded-full"
-          style="top: 73.0624%; left: 40.1653%; width: 2.49976px; height: 4.81029px; animation: 7.24411s ease-in-out 0s infinite alternate none running float;"
-        ></div>
-        <div
-          class="absolute bg-[#eefb7b]/30 rounded-full"
-          style="top: 96.4245%; left: 60.3223%; width: 2.32157px; height: 7.90525px; animation: 8.97444s ease-in-out 0s infinite alternate none running float;"
-        ></div>
-        <div
-          class="absolute bg-[#eefb7b]/30 rounded-full"
-          style="top: 17.0044%; left: 71.1725%; width: 6.51566px; height: 7.29062px; animation: 7.58764s ease-in-out 0s infinite alternate none running float;"
-        ></div>
-        <div
-          class="absolute bg-[#eefb7b]/30 rounded-full"
-          style="top: 69.2078%; left: 5.76672%; width: 2.65409px; height: 5.14498px; animation: 5.7677s ease-in-out 0s infinite alternate none running float;"
-        ></div>
-      </div> */}
-
+      
       {/** Text */}
       <div className="container mx-auto px-4 md:px-6 relative z-10">
         <div className="max-w-5xl mx-auto">
@@ -100,6 +79,7 @@ const ProjectHighlights = () => {
             brands unforgettable.
           </p>
 
+          {/** Cards */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-10 max-w-5xl mx-auto">
             {expertiseHighlights.map((item, index) => (
               <div
@@ -108,7 +88,7 @@ const ProjectHighlights = () => {
               >
                 <div className="absolute -inset-1 bg-gradient-to-br from-[#eefb7b]/0 via-[#eefb7b]/10 to-[#eefb7b]/0 rounded-lg opacity-0 group-hover:opacity-100 blur group-hover:blur-md transition-all duration-500 -z-10"></div>
 
-                <div className="bg-black-theme-card p-10 rounded-lg border border-[#eefb7b]/20 hover:border-[#eefb7b]/40 transition-all duration-300 hover:shadow-glow-sm flex flex-col items-center text-center h-full group-hover:bg-[#0c0c0c] relative z-10 overflow-hidden">
+                <div className="bg-neutral-800 p-10 rounded-lg border border-[#eefb7b]/20 hover:border-[#eefb7b]/40 transition-all duration-300 hover:shadow-glow-sm flex flex-col items-center text-center h-full group-hover:bg-[#0c0c0c] relative z-10 overflow-hidden">
                   <div className="absolute top-0 right-0 w-16 h-16 overflow-hidden">
                     <div className="absolute transform rotate-45 bg-[#eefb7b]/10 w-24 h-4 -right-6 top-6"></div>
                   </div>
@@ -149,7 +129,7 @@ const ProjectHighlights = () => {
                     {item.description}{" "}
                   </p>
 
-                  <div className="mt-auto mb-2 bg-black-theme-pure/50 px-6 py-3 rounded-lg w-full border border-[#eefb7b]/10 group-hover:border-[#eefb7b]/20 transition-all duration-300">
+                  <div className="mt-auto mb-2 bg-black/50 px-6 py-3 rounded-lg w-full border border-[#eefb7b]/10 group-hover:border-[#eefb7b]/20 transition-all duration-300">
                     <p className="text-sm font-medium text-[#eefb7b]">
                       {" "}
                       {item.highlight}{" "}
@@ -164,13 +144,13 @@ const ProjectHighlights = () => {
         </div>
 
         <div className="mt-20 text-center">
-          <a className="relative inline-flex items-center justify-center gap-2 overflow-hidden rounded-md border-2 border-[#eefb7b] bg-transparent px-10 py-6 h-10 text-sm font-medium tracking-wide text-[#eefb7b] transition-all duration-500 hover:text-black focus:outline-none font-montserrat group">
+          <Link to="/contact" className="relative inline-flex items-center justify-center gap-2 overflow-hidden rounded-md border-2 border-[#eefb7b] bg-transparent px-10 py-6 h-10 text-sm font-medium tracking-wide text-[#eefb7b] transition-all duration-500 hover:text-black focus:outline-none font-montserrat group">
             
             <span className="absolute left-0 top-0 h-full w-0 bg-[#eefb7b] transition-all duration-500 ease-in-out group-hover:w-full z-0" />
 
             <span className="relative z-10">Let's Work Together</span>
             <FiArrowRight className="relative z-10 ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
-          </a>
+          </Link>
         </div>
       </div>
     </section>

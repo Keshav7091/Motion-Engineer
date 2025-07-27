@@ -15,20 +15,11 @@ const Navbar = () => {
     setIsMobileMenuOpen(false);
   };
 
-  const navItems = [
-    "Home",
-    "About",
-    "Services",
-    "Portfolio",
-    "Careers",
-    "Contact",
-  ];
+  const navItems = ["Home", "About", "Services", "Contact"];
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-black py-5 bg-gradient-to-b from-black to-black/80 shadow-lg border-b ">
-      <div className="absolute top-0 left-0 w-full h-[1px] overflow-hidden opacity-30">
-        <div className="w-1/2 h-full bg-gradient-to-r from-transparent via-[#eefb7b]/30 to-transparent"></div>
-      </div>
+    <header className="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-black py-5 bg-gradient-to-b from-black to-black/80 shadow-lg border-b">
+      {/* ✅ Removed yellow underline div here */}
 
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex items-center justify-between relative">
@@ -70,11 +61,7 @@ const Navbar = () => {
           {/* Mobile Menu Toggle Button */}
           <div className="md:hidden z-50">
             <button onClick={toggleMenu} className="text-white">
-              {isMobileMenuOpen ? (
-                <HiX size={28} />
-              ) : (
-                <HiOutlineMenu size={28} />
-              )}
+              {isMobileMenuOpen ? <HiX size={28} /> : <HiOutlineMenu size={28} />}
             </button>
           </div>
         </div>
@@ -99,21 +86,14 @@ const Navbar = () => {
               </NavLink>
             ))}
 
-            
-              <Link to="/contact" onClick={closeMenu} className="flex justify-center pt-6">
-                <div className="flex text-center items-center justify-center rounded-md text-sm font-medium border border-[#F2FC87] bg-black/50 text-[#F2FC87] hover:bg-[#F2FC87] hover:text-black px-[69px] py-2.5 cursor-pointer transition">
-                  Get a Free Consultation
-                </div>
-              </Link>
-
+            <Link to="/contact" onClick={closeMenu} className="flex justify-center pt-6">
+              <div className="flex text-center items-center justify-center rounded-md text-sm font-medium border border-[#F2FC87] bg-black/50 text-[#F2FC87] hover:bg-[#F2FC87] hover:text-black px-[69px] py-2.5 cursor-pointer transition">
+                Get a Free Consultation
+              </div>
+            </Link>
           </div>
         </div>
       )}
-
-      {/* Bottom gradient line */}
-      <div className="absolute bottom-0 left-0 w-full h-[1px] overflow-hidden">
-        <div className="w-full h-full bg-gradient-to-r from-transparent via-[#eefb7b]/40 to-transparent animate-pulse-slow"></div>
-      </div>
     </header>
   );
 };
