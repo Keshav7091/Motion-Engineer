@@ -1,0 +1,30 @@
+/* Utility class for HSL accent color */
+.accent {
+  color: #F2FC87;
+}
+
+/* Accent background */
+.bg-accent {
+  background-color: #F2FC87;
+  color: black;
+}
+
+/* Section spacing */
+.section {
+  padding: 60px 20px;
+}
+
+/* Button style */
+.btn {
+  padding: 10px 20px;
+  background-color: #F2FC87;
+  color: black;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
