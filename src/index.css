@@ -74,20 +74,20 @@ body::-webkit-scrollbar {
 
 .container {
   max-width: 1400px;
-  padding-left: 1.5rem;  /* px-6 */
+  padding-left: 1.5rem;  
   padding-right: 1.5rem;
 }
 
 @media (max-width: 1400px) {
   .container {
-    padding-left: 3.75rem; /* px-15 = 60px */
+    padding-left: 3.75rem; 
     padding-right: 3.75rem;
   }
 }
 
 @media (max-width: 1200px) {
   .container {
-    padding-left: 4.5rem; /* px-10 */
-    padding-right: 4.5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
 }
