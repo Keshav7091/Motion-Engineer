@@ -17,7 +17,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
           <div>
             <h3 className="text-xl font-montserrat font-semibold mb-6 shadow-text">
-              MOTION ENGINEERS
+              PESWANI PIXELS
             </h3>
             <p className="text-gray-light font-roboto mb-6">
               A bouquet of creative companies delivering exceptional creative,
@@ -101,19 +101,19 @@ const Footer = () => {
               <li className="flex items-start group">
                 <IoMdMail className="lucide lucide-mail w-5 h-5 text-[#eefb7b] mr-3 mt-0.5 group-hover:animate-pulse" />
                 <span className="text-gray-light font-roboto group-hover:text-[#eefb7b] transition-colors">
-                  hello@motionengineers.in
+                  peswanipixels@gmail.com
                 </span>
               </li>
               <li className="flex items-start group">
                 <IoMdCall className="lucide lucide-phone w-5 h-5 text-[#eefb7b] mr-3 mt-0.5 group-hover:animate-pulse" />
                 <span className="text-gray-light font-roboto group-hover:text-[#eefb7b] transition-colors">
-                  +91 90120 81550
+                  +91 9468500300
                 </span>
               </li>
               <li className="flex items-start group">
                 <IoLocationSharp className="lucide lucide-map-pin w-5 h-5 text-[#eefb7b] mr-3 mt-0.5 group-hover:animate-pulse" />
                 <span className="text-gray-light font-roboto group-hover:text-[#eefb7b] transition-colors">
-                  Studio in Delhi, India
+                  G1, Elite Homes , Block-A, Sitaram Vihar, Patrakar Colony, Jaipur
                 </span>
               </li>
             </ul>
@@ -122,7 +122,7 @@ const Footer = () => {
 
         <div className="pt-8 border-t border-black-theme-rich text-center">
           <p className="text-gray-light text-sm font-roboto">
-            © 2025 <span className="text-[#eefb7b]">Motion Engineers </span>.
+            © 2025 <span className="text-[#eefb7b]">PESWANI PIXELS </span>.
             All rights reserved.
           </p>
         </div>

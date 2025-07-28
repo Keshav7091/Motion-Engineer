@@ -3,7 +3,7 @@ import { FaArrowRight } from "react-icons/fa";
 
 const LandingHero = () => {
   return (
-    <section className="relative w-full h-[78vh] overflow-hidden">
+    <section className="relative w-full h-[90vh] overflow-hidden">
       {/* Background Video */}
       <video
         className="absolute inset-0 w-full h-full object-cover z-0"

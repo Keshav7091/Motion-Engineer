@@ -1,52 +1,56 @@
 import React from 'react'
 import AnimatedCounter from '../components/AnimatedCounter';
 
+import AdidasImg from '../assets/Adidas.jpg';
+import CasioImg from '../assets/casio.webp';
+import AdidasWebp from '../assets/adidas.webp';
 
 const TrustedBy = () => {
 
-  const clientLogos = [
+
+const clientLogos = [
   {
     id: 1,
     name: "Client 1",
-    image: "src/assets/Adidas.jpg",
+    image: AdidasImg,
   },
   {
     id: 2,
     name: "Client 2",
-    image: "src/assets/casio.webp",
+    image: CasioImg,
   },
   {
     id: 3,
     name: "Client 3",
-    image: "src/assets/adidas.webp",
+    image: AdidasWebp,
   },
   {
     id: 4,
     name: "Client 4",
-    image: "src/assets/casio.webp",
+    image: CasioImg,
   },
   {
     id: 5,
     name: "Client 5",
-    image: "src/assets/adidas.webp",
+    image: AdidasWebp,
   },
   {
     id: 6,
     name: "Client 6",
-    image: "src/assets/casio.webp",
+    image: CasioImg,
   },
   {
     id: 7,
     name: "Client 7",
-    image: "src/assets/adidas.webp",
+    image: AdidasWebp,
   },
   {
     id: 8,
     name: "Client 8",
-    image: "src/assets/casio.webp",
+    image: CasioImg,
   },
-  
 ];
+
 
 const review = [
   {

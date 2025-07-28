@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import logo from "../assets/logo.jpg";
 import { Link, NavLink } from "react-router-dom";
 import Button from "./Button";
 import { IoIosArrowForward } from "react-icons/io";
@@ -19,20 +20,18 @@ const Navbar = () => {
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-black py-5 bg-gradient-to-b from-black to-black/80 shadow-lg border-b">
-      {/* ✅ Removed yellow underline div here */}
+      
 
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex items-center justify-between relative">
           {/* Logo */}
-          <Link to="/" className="z-50 group">
-            <h1 className="text-xl md:text-2xl font-bold font-montserrat tracking-tight">
-              <span className="text-white-theme-pure">
-                MOTION{" "}
-                <span className="text-[#eefb7b] group-hover:animate-[#eefb7b] shadow-text">
-                  ENGINEERS
-                </span>
-              </span>
-            </h1>
+          <Link to="/" className="z-50 flex items-center">
+            <img
+              src={logo}
+              alt="Peswani Pixels Logo"
+              className="h-16 md:h-20 w-auto object-contain"
+              style={{ marginTop: "-19px", marginBottom: "-19px" }}
+            />
           </Link>
 
           {/* Desktop Nav */}
