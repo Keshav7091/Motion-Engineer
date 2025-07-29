@@ -16,7 +16,7 @@ const Navbar = () => {
     setIsMobileMenuOpen(false);
   };
 
-  const navItems = ["Home", "About", "Services", "Contact"];
+  const navItems = ["Home", "About", "Services", "Portfolio", "Contact"];
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-black py-5 bg-gradient-to-b from-black to-black/80 shadow-lg border-b">

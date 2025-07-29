@@ -72,12 +72,12 @@ const Footer = () => {
 
             <ul className="space-y-3">
               {[
-                "Creative Design",
-                "Ads & Films",
-                "Photography",
-                "Digital Marketing",
-                "Social Media",
-                "Website Development",
+                "Graphic Design",
+                "Video Editing",
+                "Social Media Management",
+                "Meta Ads",
+                "Google Ads",
+                "Website Design & Hosting",
               ].map((service, index) => (
                 <li key={index}>
                   <Link
