@@ -2,7 +2,7 @@ import React from "react";
 
 const Button = ({ children }) => {
   return (
-    <button className="inline-flex items-center gap-2 bg-black text-[#e5f964] border border-[#e5f964] px-5 py-2 rounded-md hover:bg-[#e5f964] hover:text-black transition duration-300 cursor-pointer">
+    <button className="inline-flex items-center gap-2 bg-black text-danger border border-danger px-5 py-2 rounded-md hover:bg-[#f10000] hover:text-black transition duration-300 cursor-pointer">
       {children}
     </button>
   );

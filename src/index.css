@@ -8,9 +8,6 @@ body {
   overflow-y: scroll;
 }
 
-
-
-
 .font-poppins {
   font-family: 'Poppins', sans-serif;
 }
@@ -39,6 +36,18 @@ body {
 }
 
 
+.text-danger {
+  color: #f10000;
+}
+
+.bg-danger {
+  background-color: #f10000;
+}
+
+.border-danger {
+  border-color: #f10000;
+}
+
 
 /* Custom Scrollbar */
 ::-webkit-scrollbar {
@@ -46,11 +55,11 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-  background: white; /* black background */
+  background: white; 
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #666; /* dark grey thumb */
+  background-color: #666; 
   border-radius: 6px;
   min-height: 30px;
 }
@@ -67,8 +76,8 @@ body::-webkit-scrollbar {
 
 
 .shadow-text {
-  color: #dfff59;
-  text-shadow: 0 0 1px #dfff59, 0 0 3px #dfff59;
+  color: #f10000;
+  text-shadow: 0 0 1px #f10000, 0 0 3px #f10000;
 }
 
 

@@ -25,14 +25,17 @@ const Navbar = () => {
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex items-center justify-between relative">
           {/* Logo */}
-          <Link to="/" className="z-50 flex items-center">
-            <img
-              src={logo}
-              alt="Peswani Pixels Logo"
-              className="h-16 md:h-20 w-auto object-contain"
-              style={{ marginTop: "-19px", marginBottom: "-19px" }}
-            />
+          <Link to="/" className="z-50 group">
+            <h1 className="text-xl md:text-2xl font-bold font-montserrat tracking-tight">
+              <span className="text-white-theme-pure">
+                PESWANI{" "}
+                <span className="text-[#eefb7b] group-hover:animate-[#eefb7b] shadow-text">
+                  PIXELS
+                </span>
+              </span>
+            </h1>
           </Link>
+
 
           {/* Desktop Nav */}
           <nav className="hidden md:flex items-center space-x-8 text-sm font-medium">
@@ -42,8 +45,8 @@ const Navbar = () => {
                 to={item === "Home" ? "/" : `/${item.toLowerCase()}`}
                 className={({ isActive }) =>
                   isActive
-                    ? "text-[#F2FC87] font-montserrat"
-                    : "text-gray-300 hover:text-[#F2FC87] transition duration-200 font-montserrat"
+                    ? "text-danger font-montserrat"
+                    : "text-gray-300 hover:text-[#f10000] transition duration-200 font-montserrat"
                 }
               >
                 {item}
@@ -76,7 +79,7 @@ const Navbar = () => {
                 to={item === "Home" ? "/" : `/${item.toLowerCase()}`}
                 className={({ isActive }) =>
                   isActive
-                    ? "block text-[#F2FC87] py-3 text-center text-xl font-medium font-montserrat"
+                    ? "block text-danger py-3 text-center text-xl font-medium font-montserrat"
                     : "py-3 text-center text-xl font-medium font-montserrat text-white"
                 }
                 onClick={closeMenu}
@@ -86,7 +89,7 @@ const Navbar = () => {
             ))}
 
             <Link to="/contact" onClick={closeMenu} className="flex justify-center pt-6">
-              <div className="flex text-center items-center justify-center rounded-md text-sm font-medium border border-[#F2FC87] bg-black/50 text-[#F2FC87] hover:bg-[#F2FC87] hover:text-black px-[69px] py-2.5 cursor-pointer transition">
+              <div className="flex text-center items-center justify-center rounded-md text-sm font-medium border border-danger bg-black/50 text-danger hover:bg-[#f10000] hover:text-black px-[69px] py-2.5 cursor-pointer transition">
                 Get a Free Consultation
               </div>
             </Link>

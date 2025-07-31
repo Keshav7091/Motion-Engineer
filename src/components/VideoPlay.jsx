@@ -15,7 +15,7 @@ const VideoPlay = ({ videoSrc }) => {
       </div>
 
       <div className='absolute bottom-0 left-0 w-full h-[2px] overflow-hidden'>
-        <div className='w-1/3 h-full bg-[#eefb7b]/70 ml-auto animate-gold-pulse'></div>
+        <div className='w-1/3 h-full bg-[#f10000]/70 ml-auto'></div>
       </div>
     </section>
   );

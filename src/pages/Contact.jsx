@@ -29,7 +29,7 @@ const Contact = () => {
           <div className="max-w-6xl mx-auto">
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <div className="opacity-100 transform-none">
-                <h2 className="text-sm uppercase tracking-widest text-[#eefb7b] mb-4 font-montserrat">
+                <h2 className="text-sm uppercase tracking-widest text-danger mb-4 font-montserrat">
                   Get in Touch
                 </h2>
                 <h3 className="text-3xl md:text-4xl font-bold font-montserrat mb-6 tracking-tight">
@@ -51,7 +51,7 @@ const Contact = () => {
                         type="text"
                         placeholder="John Doe"
                         required
-                        className="w-full bg-neutral-800 border border-[#eefb7b]/50 px-4 py-2 rounded-md focus:outline-none"
+                        className="w-full bg-neutral-800 border border-danger/50 px-4 py-2 rounded-md focus:outline-none"
                       />
                     </div>
                     <div>
@@ -62,7 +62,7 @@ const Contact = () => {
                         type="email"
                         placeholder="john@example.com"
                         required
-                        className="w-full bg-neutral-800 border border-[#eefb7b]/50 px-4 py-2 rounded-md focus:outline-none"
+                        className="w-full bg-neutral-800 border border-danger/50 px-4 py-2 rounded-md focus:outline-none"
                       />
                     </div>
                   </div>
@@ -72,7 +72,7 @@ const Contact = () => {
                       <label className="block mb-2 font-semibold">
                         Phone Number
                       </label>
-                      <select className="w-full bg-neutral-800 border border-[#eefb7b]/50 px-4 py-2 rounded-md">
+                      <select className="w-full bg-neutral-800 border border-danger/50 px-4 py-2 rounded-md">
                         <option>India (+91)</option>
                         <option>USA (+1)</option>
                         <option>UK (+44)</option>
@@ -83,7 +83,7 @@ const Contact = () => {
                         type="text"
                         placeholder="12345 67890"
                         required
-                        className="w-full bg-neutral-800 border border-[#eefb7b]/50 px-4 py-2 rounded-md focus:outline-none"
+                        className="w-full bg-neutral-800 border border-danger/50 px-4 py-2 rounded-md focus:outline-none"
                       />
                     </div>
                   </div>
@@ -96,7 +96,7 @@ const Contact = () => {
                       type="text"
                       placeholder="Your Company / Brand"
                       required
-                      className="w-full bg-neutral-800 border border-[#eefb7b]/50 px-4 py-2 rounded-md focus:outline-none"
+                      className="w-full bg-neutral-800 border border-danger/50 px-4 py-2 rounded-md focus:outline-none"
                     />
                   </div>
 
@@ -105,13 +105,13 @@ const Contact = () => {
                     <textarea
                       rows={4}
                       placeholder="Tell us about your project..."
-                      className="w-full bg-neutral-800 border border-[#eefb7b]/50 px-4 py-2 rounded-md focus:outline-none resize-none"
+                      className="w-full bg-neutral-800 border border-danger/50 px-4 py-2 rounded-md focus:outline-none resize-none"
                     ></textarea>
                   </div>
 
                   <button
                     type="submit"
-                    className="w-full mt-4 flex items-center justify-center gap-5 border border-[#eefb7b] text-[#eefb7b] hover:bg-[#eefb7b] hover:text-black px-5 py-2 rounded-md transition-all duration-300"
+                    className="w-full mt-4 flex items-center justify-center gap-5 border border-danger text-danger hover:bg-danger hover:text-black px-5 py-2 rounded-md transition-all duration-300"
                   >
                     <FiSend size={15} />
                     <span className="font-semibold text-sm">Send Message</span>
@@ -119,14 +119,14 @@ const Contact = () => {
                 </form>
               </div>
 
-              <div className="bg-black text rounded-lg border border-[#eefb7b]/20 shadow-gold p-8 md:p-12">
+              <div className="bg-black text rounded-lg border border-danger/20 shadow-gold p-8 md:p-12">
                 <h3 className="text-2xl font-bold font-montserrat mb-8 tracking-tight">
                   Contact Information
                 </h3>
 
                 <div className="space-y-8">
                   <div className="flex items-start">
-                    <MdOutlineMail className="lucide lucide-mail w-6 h-6 text-[#eefb7b] mr-4" />
+                    <MdOutlineMail className="lucide lucide-mail w-6 h-6 text-danger mr-4" />
                     <div>
                       <h4 className="font-medium font-montserrat mb-2">
                         Email
@@ -138,7 +138,7 @@ const Contact = () => {
                     </div>
                   </div>
                   <div className="flex items-start">
-                    <MdOutlinePhone className="lucide lucide-mail w-6 h-6 text-[#eefb7b] mr-4" />
+                    <MdOutlinePhone className="lucide lucide-mail w-6 h-6 text-danger mr-4" />
                     <div>
                       <h4 className="font-medium font-montserrat mb-2">
                         Phone
@@ -150,7 +150,7 @@ const Contact = () => {
                     </div>
                   </div>
                   <div className="flex items-start">
-                    <MdOutlineLocationOn className="lucide lucide-mail w-6 h-6 text-[#eefb7b] mr-4" />
+                    <MdOutlineLocationOn className="lucide lucide-mail w-6 h-6 text-danger mr-4" />
                     <div>
                       <h4 className="font-medium font-montserrat mb-2">
                         Locations

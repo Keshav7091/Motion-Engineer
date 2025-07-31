@@ -10,7 +10,7 @@ const Footer = () => {
   return (
     <footer className="bg-black-theme-poor text-white pt-16 pb-8 relative">
       <div className="absolute top-0 left-0 w-full h-[2px] overflow-hidden">
-        <div className="w-full h-full bg-gradient-to-r from-transparent via-[#eefb7b]/70 to-transparent animate-gold-pulse"></div>
+        <div className="w-full h-full bg-gradient-to-r from-transparent via-danger/70 to-transparent "></div>
       </div>
 
       <div className="container mx-auto px-4 md:px-6">
@@ -29,18 +29,19 @@ const Footer = () => {
                   <a
                     key={index}
                     href="#"
-                    className="w-10 h-10 rounded-full flex items-center justify-center hover:text-black   hover:bg-[#F2FC87] hover:shadow-text  transition-all duration-300"
+                    className="w-10 h-10 rounded-full flex items-center justify-center hover:text-white   hover:bg-[#f10000]  transition-all duration-300"
                   >
                     <Icon size={18} />
                   </a>
                 )
               )}
             </div>
+
           </div>
 
           <div>
-            <h3 className="text-lg font-montserrat font-semibold mb-6 text-[#eefb7b] inline-flex items-center">
-              <span className="w-6 h-px bg-[#eefb7b] mr-2"></span>
+            <h3 className="text-lg font-montserrat font-semibold mb-6 text-danger inline-flex items-center">
+              <span className="w-6 h-px bg-danger mr-2"></span>
               Quick Links
             </h3>
 
@@ -54,7 +55,7 @@ const Footer = () => {
                           ? "/"
                           : `/${item.toLowerCase().replace(/\s/g, "")}`
                       }
-                      className="text-gray-light hover:text-[#eefb7b] font-roboto hover:translate-x-1 inline-block transition-transform"
+                      className="text-gray-light hover:text-[#f10000] font-roboto hover:translate-x-1 inline-block transition-transform"
                     >
                       {item}
                     </Link>
@@ -65,8 +66,8 @@ const Footer = () => {
           </div>
 
           <div>
-            <h3 className="text-lg font-montserrat font-semibold mb-6 text-[#eefb7b] inline-flex items-center">
-              <span className="w-6 h-px bg-[#eefb7b] mr-2"></span>
+            <h3 className="text-lg font-montserrat font-semibold mb-6 text-danger inline-flex items-center">
+              <span className="w-6 h-px bg-danger mr-2"></span>
               Services
             </h3>
 
@@ -82,7 +83,7 @@ const Footer = () => {
                 <li key={index}>
                   <Link
                     to="/service"
-                    className="text-gray-light hover:text-[#eefb7b] font-roboto hover:translate-x-1 inline-block transition-transform"
+                    className="text-gray-light hover:text-[#f10000] font-roboto hover:translate-x-1 inline-block transition-transform"
                   >
                     {service}
                   </Link>
@@ -92,27 +93,27 @@ const Footer = () => {
           </div>
 
           <div>
-            <h3 className="text-lg font-montserrat font-semibold mb-6 text-[#eefb7b] inline-flex items-center">
-              <span className="w-6 h-px bg-[#eefb7b] mr-2"></span>
+            <h3 className="text-lg font-montserrat font-semibold mb-6 text-danger inline-flex items-center">
+              <span className="w-6 h-px bg-danger mr-2"></span>
               Contact Us
             </h3>
 
             <ul className="space-y-4">
               <li className="flex items-start group">
-                <IoMdMail className="lucide lucide-mail w-5 h-5 text-[#eefb7b] mr-3 mt-0.5 group-hover:animate-pulse" />
-                <span className="text-gray-light font-roboto group-hover:text-[#eefb7b] transition-colors">
+                <IoMdMail className="lucide lucide-mail w-5 h-5 text-danger mr-3 mt-0.5 group-hover:animate-pulse" />
+                <span className="text-gray-light font-roboto group-hover:text-[#f10000] transition-colors">
                   peswanipixels@gmail.com
                 </span>
               </li>
               <li className="flex items-start group">
-                <IoMdCall className="lucide lucide-phone w-5 h-5 text-[#eefb7b] mr-3 mt-0.5 group-hover:animate-pulse" />
-                <span className="text-gray-light font-roboto group-hover:text-[#eefb7b] transition-colors">
+                <IoMdCall className="lucide lucide-phone w-5 h-5 text-danger mr-3 mt-0.5 group-hover:animate-pulse" />
+                <span className="text-gray-light font-roboto group-hover:text-[#f10000] transition-colors">
                   +91 9468500300
                 </span>
               </li>
               <li className="flex items-start group">
-                <IoLocationSharp className="lucide lucide-map-pin w-5 h-5 text-[#eefb7b] mr-3 mt-0.5 group-hover:animate-pulse" />
-                <span className="text-gray-light font-roboto group-hover:text-[#eefb7b] transition-colors">
+                <IoLocationSharp className="lucide lucide-map-pin w-5 h-5 text-danger mr-3 mt-0.5 group-hover:animate-pulse" />
+                <span className="text-gray-light font-roboto group-hover:text-[#f10000] transition-colors">
                   G1, Elite Homes , Block-A, Sitaram Vihar, Patrakar Colony, Jaipur
                 </span>
               </li>
@@ -122,7 +123,7 @@ const Footer = () => {
 
         <div className="pt-8 border-t border-black-theme-rich text-center">
           <p className="text-gray-light text-sm font-roboto">
-            © 2025 <span className="text-[#eefb7b]">PESWANI PIXELS </span>.
+            © 2025 <span className="text-danger">PESWANI PIXELS </span>.
             All rights reserved.
           </p>
         </div>

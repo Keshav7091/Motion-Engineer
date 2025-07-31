@@ -54,12 +54,12 @@ const ProjectHighlights = () => {
       </div>
 
       {/** Boxes in Background */}
-      <div className="absolute top-20 left-20 border border-[#eefb7b]/5 w-32 h-32 animate-float-delay"></div>
-      <div className="absolute bottom-20 right-20 border border-[#eefb7b]/5 w-48 h-48 animate-float"></div>
-      <div className="absolute top-1/2 left-0 w-96 h-96 bg-gradient-to-r from-[#eefb7b]/5 to-transparent blur-3xl rounded-full"></div>
-      <div className="absolute bottom-10 left-1/4 w-24 h-24 border border-[#eefb7b]/5 rounded-full"></div>
-      <div className="absolute top-10 right-1/4 w-20 h-20 border border-[#eefb7b]/5"></div>
-      <div className="absolute top-1/3 right-0 w-80 h-80 bg-gradient-to-l from-[#eefb7b]/5to-transparent blur-3xl rounded-full"></div>
+      <div className="absolute top-20 left-20 border border-danger/5 w-32 h-32 animate-float-delay"></div>
+      <div className="absolute bottom-20 right-20 border border-danger/5 w-48 h-48 animate-float"></div>
+      <div className="absolute top-1/2 left-0 w-96 h-96 bg-gradient-to-r from-[#f10000]/5 to-transparent blur-3xl rounded-full"></div>
+      <div className="absolute bottom-10 left-1/4 w-24 h-24 border border-danger/5 rounded-full"></div>
+      <div className="absolute top-10 right-1/4 w-20 h-20 border border-danger/5"></div>
+      <div className="absolute top-1/3 right-0 w-80 h-80 bg-gradient-to-l from-[#f10000]/5to-transparent blur-3xl rounded-full"></div>
 
       
       {/** Text */}
@@ -69,7 +69,7 @@ const ProjectHighlights = () => {
             <span>What Makes Us </span>
             <span className="shadow-text relative inline-block">
               Different
-              <span className="absolute -bottom-1 left-0 h-[2px] bg-[#eefb7b]/30 w-[100%]"></span>
+              <span className="absolute -bottom-1 left-0 h-[2px] bg-danger/30 w-[100%]"></span>
             </span>
           </h2>
 
@@ -86,20 +86,20 @@ const ProjectHighlights = () => {
                 key={index}
                 className="group relative opacity-100 transform-none"
               >
-                <div className="absolute -inset-1 bg-gradient-to-br from-[#eefb7b]/0 via-[#eefb7b]/10 to-[#eefb7b]/0 rounded-lg opacity-0 group-hover:opacity-100 blur group-hover:blur-md transition-all duration-500 -z-10"></div>
+                <div className="absolute -inset-1 bg-gradient-to-br from-[#f10000]/0 via-[#f10000]/10 to-[#f10000]/0 rounded-lg opacity-0 group-hover:opacity-100 blur group-hover:blur-md transition-all duration-500 -z-10"></div>
 
-                <div className="bg-neutral-800 p-10 rounded-lg border border-[#eefb7b]/20 hover:border-[#eefb7b]/40 transition-all duration-300 hover:shadow-glow-sm flex flex-col items-center text-center h-full group-hover:bg-[#0c0c0c] relative z-10 overflow-hidden">
+                <div className="bg-neutral-800 p-10 rounded-lg border border-danger/20 hover:border-[#f10000]/40 transition-all duration-300 hover:shadow-glow-sm flex flex-col items-center text-center h-full group-hover:bg-[#0c0c0c] relative z-10 overflow-hidden">
                   <div className="absolute top-0 right-0 w-16 h-16 overflow-hidden">
-                    <div className="absolute transform rotate-45 bg-[#eefb7b]/10 w-24 h-4 -right-6 top-6"></div>
+                    <div className="absolute transform rotate-45 bg-danger/10 w-24 h-4 -right-6 top-6"></div>
                   </div>
                   <div className="absolute bottom-0 left-0 w-16 h-16 overflow-hidden">
-                    <div className="absolute transform rotate-45 bg-[#eefb7b]/10 w-24 h-4 -left-6 bottom-6"></div>
+                    <div className="absolute transform rotate-45 bg-danger/10 w-24 h-4 -left-6 bottom-6"></div>
                   </div>
-                  <div className="absolute -right-20 -top-20 w-40 h-40 bg-[#eefb7b]/5 rounded-full blur-xl opacity-0 group-hover:opacity-60 transition-opacity duration-500"></div>
+                  <div className="absolute -right-20 -top-20 w-40 h-40 bg-danger/5 rounded-full blur-xl opacity-0 group-hover:opacity-60 transition-opacity duration-500"></div>
 
                   <div className="relative mb-8">
-                    <div className="absolute inset-0 bg-[#eefb7b]/5 rounded-full blur-xl opacity-50"></div>
-                    <div className="relative z-10 w-20 h-20 rounded-full border-2 border-[#eefb7b]/30 p-1 group-hover:border-[#eefb7b]/50 transition-all duration-300">
+                    <div className="absolute inset-0 bg-danger/5 rounded-full blur-xl opacity-50"></div>
+                    <div className="relative z-10 w-20 h-20 rounded-full border-2 border-danger/30 p-1 group-hover:border-[#f10000]/50 transition-all duration-300">
                       <div className="w-full h-full rounded-full bg-[#0a0a0a] flex items-center justify-center">
                         {item.icon}
                       </div>
@@ -113,13 +113,13 @@ const ProjectHighlights = () => {
                     ></div>
                   </div>
 
-                  <h3 className="text-2xl md:text-3xl font-bold font-montserrat mb-4 text-white-theme-pure group-hover:text-[#eefb7b] transition-colors duration-300">
+                  <h3 className="text-2xl md:text-3xl font-bold font-montserrat mb-4 text-white-theme-pure group-hover:text-[#f10000] transition-colors duration-300">
                     {" "}
                     {item.title}{" "}
                   </h3>
 
-                  <div className="mb-4 px-4 py-1.5 bg-[#eefb7b]/10 rounded-full inline-block">
-                    <p className="text-sm text-[#eefb7b] font-medium tracking-wide">
+                  <div className="mb-4 px-4 py-1.5 bg-danger/10 rounded-full inline-block">
+                    <p className="text-sm text-danger font-medium tracking-wide">
                       {" "}
                       {item.subtitle}{" "}
                     </p>
@@ -129,14 +129,14 @@ const ProjectHighlights = () => {
                     {item.description}{" "}
                   </p>
 
-                  <div className="mt-auto mb-2 bg-black/50 px-6 py-3 rounded-lg w-full border border-[#eefb7b]/10 group-hover:border-[#eefb7b]/20 transition-all duration-300">
-                    <p className="text-sm font-medium text-[#eefb7b]">
+                  <div className="mt-auto mb-2 bg-black/50 px-6 py-3 rounded-lg w-full border border-danger/10 group-hover:border-[#f10000]/20 transition-all duration-300">
+                    <p className="text-sm font-medium text-danger">
                       {" "}
                       {item.highlight}{" "}
                     </p>
                   </div>
 
-                  <div className="mt-6 w-full h-[1px] bg-gradient-to-r from-transparent via-[#eefb7b]/20 to-transparent opacity-100 transform-none"></div>
+                  <div className="mt-6 w-full h-[1px] bg-gradient-to-r from-transparent via-[#f10000]/20 to-transparent opacity-100 transform-none"></div>
                 </div>
               </div>
             ))}
@@ -144,9 +144,9 @@ const ProjectHighlights = () => {
         </div>
 
         <div className="mt-20 text-center">
-          <Link to="/contact" className="relative inline-flex items-center justify-center gap-2 overflow-hidden rounded-md border-2 border-[#eefb7b] bg-transparent px-10 py-6 h-10 text-sm font-medium tracking-wide text-[#eefb7b] transition-all duration-500 hover:text-black focus:outline-none font-montserrat group">
+          <Link to="/contact" className="relative inline-flex items-center justify-center gap-2 overflow-hidden rounded-md border-2 border-danger bg-transparent px-10 py-6 h-10 text-sm font-medium tracking-wide text-danger transition-all duration-500 hover:text-black focus:outline-none font-montserrat group">
             
-            <span className="absolute left-0 top-0 h-full w-0 bg-[#eefb7b] transition-all duration-500 ease-in-out group-hover:w-full z-0" />
+            <span className="absolute left-0 top-0 h-full w-0 bg-danger transition-all duration-500 ease-in-out group-hover:w-full z-0" />
 
             <span className="relative z-10">Let's Work Together</span>
             <FiArrowRight className="relative z-10 ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />

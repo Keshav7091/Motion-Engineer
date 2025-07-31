@@ -20,7 +20,7 @@ const Services = () => {
   const serviceData = [
   {
     title: "Graphic Design",
-    icon: <CiImageOn className="text-[#eefb7b] w-6 h-6" />,
+    icon: <CiImageOn className="text-danger w-6 h-6" />,
     description: "Crafting visually stunning graphics to communicate your brand effectively across all platforms.",
     features: [
       "Logo & Branding",
@@ -31,7 +31,7 @@ const Services = () => {
   },
   {
     title: "Video Editing",
-    icon: <CiVideoOn className="text-[#eefb7b] w-6 h-6" />,
+    icon: <CiVideoOn className="text-danger w-6 h-6" />,
     description: "Professional video editing services to bring your raw footage to life with style and storytelling.",
     features: [
       "Corporate Videos",
@@ -42,7 +42,7 @@ const Services = () => {
   },
   {
     title: "Social Media Management",
-    icon: <CiShare2 className="text-[#eefb7b] w-6 h-6" />,
+    icon: <CiShare2 className="text-danger w-6 h-6" />,
     description: "Manage and grow your social media presence with engaging content, strategy, and community building.",
     features: [
       "Content Planning",
@@ -53,7 +53,7 @@ const Services = () => {
   },
   {
     title: "Meta Ads",
-    icon: <CiBullhorn className="text-[#eefb7b] w-6 h-6" />,
+    icon: <CiBullhorn className="text-danger w-6 h-6" />,
     description: "Reach your audience with targeted advertising on Facebook and Instagram for high ROI.",
     features: [
       "Campaign Strategy",
@@ -64,7 +64,7 @@ const Services = () => {
   },
   {
     title: "Google Ads",
-    icon: <CiGlobe className="text-[#eefb7b] w-6 h-6" />,
+    icon: <CiGlobe className="text-danger w-6 h-6" />,
     description: "Maximize your visibility and leads through Google Search, Display, and YouTube Ads.",
     features: [
       "Keyword Research",
@@ -75,7 +75,7 @@ const Services = () => {
   },
   {
     title: "Website Design & Hosting",
-    icon: <CiDesktop className="text-[#eefb7b] w-6 h-6" />,
+    icon: <CiDesktop className="text-danger w-6 h-6" />,
     description: "Custom websites designed for performance, UX, and reliability with secure hosting solutions.",
     features: [
       "Responsive Web Design",
@@ -86,7 +86,7 @@ const Services = () => {
   },
   {
     title: "Search Engine Optimization (SEO)",
-    icon: <CiSearch className="text-[#eefb7b] w-6 h-6" />,
+    icon: <CiSearch className="text-danger w-6 h-6" />,
     description: "Improve your online visibility, rank higher on Google, and attract organic traffic.",
     features: [
       "On-Page SEO",
@@ -97,7 +97,7 @@ const Services = () => {
   },
   {
     title: "Photography & Videography",
-    icon: <CiCamera className="text-[#eefb7b] w-6 h-6" />,
+    icon: <CiCamera className="text-danger w-6 h-6" />,
     description: "Capture professional-quality photos and videos that speak volumes for your brand.",
     features: [
       "Product Shoots",
@@ -108,7 +108,7 @@ const Services = () => {
   },
   {
     title: "Influencer Marketing",
-    icon: <CiUser className="text-[#eefb7b] w-6 h-6" />,
+    icon: <CiUser className="text-danger w-6 h-6" />,
     description: "Leverage trusted influencers to promote your brand to a highly engaged audience.",
     features: [
       "Influencer Outreach",
@@ -119,7 +119,7 @@ const Services = () => {
   },
   {
     title: "Ecommerce Listing",
-    icon: <CiShoppingTag className="text-[#eefb7b] w-6 h-6" />,
+    icon: <CiShoppingTag className="text-danger w-6 h-6" />,
     description: "Professional product listing and catalog management for ecommerce platforms.",
     features: [
       "Product Title & Description",
@@ -130,7 +130,7 @@ const Services = () => {
   },
   {
     title: "Copywriting",
-    icon: <CiEdit className="text-[#eefb7b] w-6 h-6" />,
+    icon: <CiEdit className="text-danger w-6 h-6" />,
     description: "Persuasive and brand-aligned content writing to drive conversions and engagement.",
     features: [
       "Website Copy",
@@ -141,7 +141,7 @@ const Services = () => {
   },
   {
     title: "UI/UX Design",
-    icon: <CiViewTimeline className="text-[#eefb7b] w-6 h-6" />,
+    icon: <CiViewTimeline className="text-danger w-6 h-6" />,
     description: "Designing intuitive and beautiful user experiences that delight and convert.",
     features: [
       "Wireframes & Prototypes",
@@ -152,7 +152,7 @@ const Services = () => {
   },
   {
     title: "3D Animation",
-    icon: <IoCubeOutline className="text-[#eefb7b] w-6 h-6" />,
+    icon: <IoCubeOutline className="text-danger w-6 h-6" />,
     description: "High-quality 3D animation services to visually communicate complex ideas and stories.",
     features: [
       "Product Animations",
@@ -163,7 +163,7 @@ const Services = () => {
   },
   {
     title: "Cafe Shoot & SMM",
-    icon: <CiForkAndKnife className="text-[#eefb7b] w-6 h-6" />,
+    icon: <CiForkAndKnife className="text-danger w-6 h-6" />,
     description: "End-to-end visual content creation and social media marketing for cafes and restaurants.",
     features: [
       "Food Photography",
@@ -174,7 +174,7 @@ const Services = () => {
   },
   {
     title: "Google Maps Reviews",
-    icon: <CiLocationOn className="text-[#eefb7b] w-6 h-6" />,
+    icon: <CiLocationOn className="text-danger w-6 h-6" />,
     description: "Enhance your local presence by increasing your visibility and trust on Google Maps.",
     features: [
       "Review Strategy",
@@ -185,7 +185,7 @@ const Services = () => {
   },
   {
     title: "YouTube Thumbnail Design",
-    icon: <CiImageOn className="text-[#eefb7b] w-6 h-6" />,
+    icon: <CiImageOn className="text-danger w-6 h-6" />,
     description: "Custom, eye-catching thumbnails that increase click-through rates and grow your channel.",
     features: [
       "CTR Optimized Designs",
@@ -196,7 +196,7 @@ const Services = () => {
   },
   {
     title: "WhatsApp Automation",
-    icon: <CiChat2 className="text-[#eefb7b] w-6 h-6" />,
+    icon: <CiChat2 className="text-danger w-6 h-6" />,
     description: "Automate customer communication and lead engagement through WhatsApp bots and APIs.",
     features: [
       "Broadcast Messaging",
@@ -207,7 +207,7 @@ const Services = () => {
   },
   {
     title: "Meme Marketing",
-    icon: <CiFaceSmile className="text-[#eefb7b] w-6 h-6" />,
+    icon: <CiFaceSmile className="text-danger w-6 h-6" />,
     description: "Leverage viral meme content to reach audiences in a fun, relatable, and organic way.",
     features: [
       "Brand-Specific Memes",
@@ -218,7 +218,7 @@ const Services = () => {
   },
   {
     title: "PR Services",
-    icon: <CiMicrophoneOn className="text-[#eefb7b] w-6 h-6" />,
+    icon: <CiMicrophoneOn className="text-danger w-6 h-6" />,
     description: "Build credibility and media presence through strategic public relations and press coverage.",
     features: [
       "Media Outreach",
@@ -229,7 +229,7 @@ const Services = () => {
   },
   {
     title: "Founder Personal Branding",
-    icon: <FaRegUserCircle className="text-[#eefb7b] w-6 h-6" />,
+    icon: <FaRegUserCircle className="text-danger w-6 h-6" />,
     description: "Craft and promote your personal brand to become a trusted face of your company.",
     features: [
       "LinkedIn Content Strategy",
@@ -240,7 +240,7 @@ const Services = () => {
   },
   {
     title: "App Development",
-    icon: <CiMobile3 className="text-[#eefb7b] w-6 h-6" />,
+    icon: <CiMobile3 className="text-danger w-6 h-6" />,
     description: "End-to-end mobile app development services tailored to your business needs.",
     features: [
       "iOS & Android Apps",
@@ -296,10 +296,10 @@ const Services = () => {
             {serviceData.map((service, index) => (
               <div
                 key={index}
-                className="bg-black-theme-card rounded-lg border border-[#eefb7b]/20 shadow-gold overflow-hidden hover-scale"
+                className="bg-black-theme-card rounded-lg border border-danger/20 shadow-gold overflow-hidden hover-scale"
               >
                 <div className="p-8 bg-neutral-900">
-                  <div className="w-12 h-12 rounded-full bg-[#eefb7b]/10 flex items-center justify-center mb-6 border border-[#eefb7b]/40 ">
+                  <div className="w-12 h-12 rounded-full bg-danger/10 flex items-center justify-center mb-6 border border-danger/40 ">
                     {service.icon}
                   </div>
 
@@ -319,7 +319,7 @@ const Services = () => {
                   <ul className="space-y-2">
                     {service.features.map((item, idx) => (
                       <li key={idx} className="flex items-start">
-                        <LuCircleCheckBig className="lucide lucide-circle-check-big w-5 h-5 text-[#eefb7b] mr-2 mt-0.5 flex-shrink-0" />
+                        <LuCircleCheckBig className="lucide lucide-circle-check-big w-5 h-5 text-danger mr-2 mt-0.5 flex-shrink-0" />
                         <span className="text-gray-light font-roboto">
                           {item}
                         </span>
@@ -336,7 +336,7 @@ const Services = () => {
       <section className="py-24 bg-black-theme-rich">
         <div className="container mx-auto px-4 md:px-6">
           <div className="text-center max-w-3xl mx-auto mb-16">
-            <h2 className="text-sm uppercase tracking-widest text-[#eefb7b] mb-4 font-montserrat">
+            <h2 className="text-sm uppercase tracking-widest text-danger mb-4 font-montserrat">
               Our Approach
             </h2>
             <h3 className="text-3xl md:text-4xl font-montserrat font-bold mb-6 text-white-theme-pure">
@@ -351,12 +351,12 @@ const Services = () => {
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
               {processSteps.map((step, index) => (
                 <div key={step.step} className="relative">
-                  <div className="flex items-center justify-center w-16 h-16 rounded-full bg-black-theme-card text-xl font-bold text-[#eefb7b] mb-6 border border-[#eefb7b]/30">
+                  <div className="flex items-center justify-center w-16 h-16 rounded-full bg-black-theme-card text-xl font-bold text-danger mb-6 border border-danger/30">
                     {step.step}
                   </div>
 
                   {index !== processSteps.length - 1 && (
-                    <div className="absolute top-8 left-16 w-full h-0.5 bg-[#eefb7b]/20 hidden md:block"></div>
+                    <div className="absolute top-8 left-16 w-full h-0.5 bg-danger/20 hidden md:block"></div>
                   )}
 
                   <h4 className="text-xl font-semibold font-montserrat mb-3 text-white-theme-pure">
