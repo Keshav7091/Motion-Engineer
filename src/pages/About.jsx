@@ -1,14 +1,10 @@
 import React from "react";
 import VideoPlay from "../components/VideoPlay";
 import { FaHeart } from "react-icons/fa";
-import { IoIosArrowForward } from "react-icons/io";
-import { Link } from "react-router-dom";
-import Button from "../components/Button";
 
 import AboutV from "../assets/AboutV.mp4";
-import peopleImage from "../assets/peopleImage.webp";
-import manish from "../assets/manish.webp";
-import Nihal from "../assets/Nihal.webp";
+
+import himanshu from "../assets/Himanshu.jpg";
 import logo from "../assets/logo.jpg";
 
 const About = () => {
@@ -125,7 +121,7 @@ const About = () => {
               <div className="relative overflow-hidden h-full">
                 <div className="relative aspect-[9/16] overflow-hidden">
                   <img
-                    src={manish}
+                    src={himanshu}
                     alt=""
                     className="w-full h-full object-cover transition-all duration-500"
                   />
@@ -133,7 +129,7 @@ const About = () => {
                   <div className="absolute inset-0 bg-black/90 backdrop-blur-sm flex flex-col justify-center items-center transition-all duration-300 p-8 opacity-0 md:group-hover:opacity-100">
                     <div className="max-w-xs">
                       <h3 className="text-white-theme-pure text-2xl font-bold font-montserrat mb-1">
-                        Manish Chaudhary
+                        Himanshu Peswani
                       </h3>
 
                       <span className="text-danger text-lg font-medium tracking-wide font-montserrat mb-4 inline-block">
@@ -145,11 +141,11 @@ const About = () => {
                       </p>
 
                       <p className="text-white-theme-pure font-roboto text-center">
-                        From editing suites to film sets, Manish has spent years
-                        crafting stories that connect. Now, he brings creative
-                        minds and cutting-edge tech together under one roof —
-                        building an agency where everyone grows, and wins,
-                        together.
+                        From editing suites to film sets, Himanshu has spent
+                        years crafting stories that connect. Now, he brings
+                        creative minds and cutting-edge tech together under one
+                        roof — building an agency where everyone grows, and
+                        wins, together.
                       </p>
                     </div>
                   </div>
@@ -157,12 +153,11 @@ const About = () => {
 
                 <div className="text-center mt-3">
                   <div className="text-danger text-lg font-medium tracking-wide font-montserrat">
-                    Design-smith
+                    Himanshi Peswani
                   </div>
                 </div>
               </div>
             </div>
-
 
             {/* <div className="relative z-10 group opacity-100 transform-none">
               <div className="relative overflow-hidden h-full">
