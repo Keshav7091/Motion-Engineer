@@ -1,43 +1,56 @@
-import { FaPenNib, FaVideo, FaCamera } from "react-icons/fa";
-import { FiArrowRight } from "react-icons/fi";
 import { FaTh } from "react-icons/fa";
+import { FiArrowRight } from "react-icons/fi";
 import { Link } from "react-router-dom";
+import {
+  CiCamera,
+  CiDesktop,
+  CiGlobe,
+  CiImageOn,
+  CiShare2,
+  CiVideoOn,
+} from "react-icons/ci";
 
 const services = [
   {
-    icon: <FaPenNib className="text-danger text-2xl" />,
-    title: "Creative Design",
-    description: "We build brands that people remember.",
+    icon: <CiShare2 className="text-danger text-2xl" />,
+    title: "Social Media Management",
+    description:
+      "Manage and grow your social media presence with engaging content, strategy, and community building.",
     link: "Learn more",
   },
   {
-    icon: <FaVideo className="text-danger text-2xl" />,
-    title: "Ads & Films",
-    description: "From script to screen, we bring ideas to life.",
+    icon: <CiVideoOn className="text-danger text-2xl" />,
+    title: "Video Editing",
+    description:
+      "Professional video editing services to bring your raw footage to life with style and storytelling.",
     link: "Learn more",
   },
   {
-    icon: <FaCamera className="text-danger text-2xl" />,
-    title: "Photography",
-    description: "Every frame tells a story.",
+    icon: <CiDesktop className="text-danger text-2xl" />,
+    title: "Website Design & Hosting",
+    description:
+      "Crafting visually stunning websites that are user-friendly and optimized for performance.",
     link: "Learn more",
   },
   {
-    icon: <FaCamera className="text-danger text-2xl" />,
-    title: "Photography",
-    description: "Every frame tells a story.",
+    icon: <CiGlobe className="text-danger text-2xl" />,
+    title: "Performance Marketing",
+    description:
+      "Reach your audience with targeted advertising on Google and Facebook for high ROI.",
     link: "Learn more",
   },
   {
-    icon: <FaCamera className="text-danger text-2xl" />,
-    title: "Photography",
-    description: "Every frame tells a story.",
+    icon: <CiImageOn className="text-danger text-2xl" />,
+    title: "Graphic Design",
+    description:
+      "Crafting visually stunning graphics to communicate your brand effectively across all platforms.",
     link: "Learn more",
   },
   {
-    icon: <FaCamera className="text-danger text-2xl" />,
-    title: "Photography",
-    description: "Every frame tells a story.",
+    icon: <CiCamera className="text-danger text-2xl" />,
+    title: "Cafe Shoot & SMM",
+    description:
+      "Capturing the essence of your brand through cafe shoots and social media management.",
     link: "Learn more",
   },
 ];
@@ -45,10 +58,10 @@ const services = [
 const OurServices = () => {
   return (
     <section className="text-white bg-black-theme-poor py-24 relative overflow-hidden">
-      {/* Title and Description */}
       <div className="container mx-auto px-4 md:px-6 relative z-10">
-        <div className="max-w-3xl mx-auto mb-24 text-center opacity-100 transform-none">
-          <div className="relative inline-block mb-2 opacity-100 transform-none">
+        {/* Title */}
+        <div className="max-w-3xl mx-auto mb-24 text-center">
+          <div className="relative inline-block mb-2">
             <FaTh className="w-8 h-8 mx-auto mb-4 text-danger" />
             <div className="h-[1px] w-24 bg-gradient-to-r from-transparent via-[#f10000]/50 to-transparent mx-auto"></div>
           </div>
@@ -78,15 +91,15 @@ const OurServices = () => {
           </p>
         </div>
 
-        {/* Cards Grid */}
+        {/* Cards */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-10">
           {services.map((service, index) => (
             <div
               key={index}
-              className="group relative opacity-100 transform-none"
+              className="group relative h-full flex flex-col"
             >
-              <div className="relative overflow-hidden rounded-lg transition-all duration-300 group-hover:-translate-y-1">
-                <div className="bg-neutral-900 p-8 rounded-lg border border-danger/10 transition-all duration-500 group-hover:border-[#f10000]/30 group-hover:shadow-glow-sm h-full z-10 relative">
+              <div className="relative overflow-hidden rounded-lg transition-all duration-300 group-hover:-translate-y-1 flex flex-col h-full">
+                <div className="bg-neutral-900 p-8 rounded-lg border border-danger/10 transition-all duration-500 group-hover:border-[#f10000]/30 group-hover:shadow-glow-sm h-full flex flex-col">
                   <div className="w-16 h-16 rounded-full bg-black/50 backdrop-blur-sm border border-danger/20 flex items-center justify-center mb-6 transition-all duration-300 group-hover:bg-[#f10000]/10 group-hover:border-[#f10000]/40">
                     {service.icon}
                   </div>
@@ -105,7 +118,6 @@ const OurServices = () => {
                       <FiArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
                     </Link>
                   </div>
-
                 </div>
               </div>
             </div>

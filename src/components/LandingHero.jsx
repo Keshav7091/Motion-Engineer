@@ -1,5 +1,6 @@
 import React from 'react'
 import { FaArrowRight } from "react-icons/fa";
+import { Link } from 'react-router-dom';
 
 const LandingHero = () => {
   return (
@@ -21,10 +22,10 @@ const LandingHero = () => {
 
       {/* Button */}
       <div className="absolute bottom-10 right-20 z-20">
-        <button className="flex items-center gap-5 bg-danger text-black px-10 py-3 rounded-lg shadow-lg font-semibold text-sm group">
-          Let's Engineer Your Next Move
+        <Link to="/portfolio" className="flex items-center gap-5 bg-danger text-black px-10 py-3 rounded-lg shadow-lg font-semibold text-sm group">
+          Let's Peswani Pixels Your Next Move
           <FaArrowRight className="group-hover:translate-x-1 transition-all duration-300" />
-        </button>
+        </Link>
       </div>
     </section>
   )

@@ -9,6 +9,7 @@ import AboutV from "../assets/AboutV.mp4";
 import peopleImage from "../assets/peopleImage.webp";
 import manish from "../assets/manish.webp";
 import Nihal from "../assets/Nihal.webp";
+import logo from "../assets/logo.jpg";
 
 const About = () => {
   return (
@@ -77,7 +78,7 @@ const About = () => {
 
             <div className="relative aspect-square md:aspect-auto md:h-[600px]">
               <img
-                src={peopleImage}
+                src={logo}
                 alt="Agency studio"
                 className="w-full h-full object-cover rounded-lg shadow-text border "
               />
@@ -110,15 +111,15 @@ const About = () => {
         <div className="container mx-auto px-4 md:px-6 relative z-10">
           <div className="text-center mb-16 opacity-100 transform-none">
             <h2 className="text-3xl md:text-4xl font-bold font-montserrat mb-4 tracking-tight">
-              Meet Our <span className="shadow-text">Team</span>
+              Meet Our <span className="shadow-text">Founder</span>
             </h2>
             <p className="text-gray-light font-roboto max-w-2xl mx-auto">
-              The creative minds behind Motion Engineers, committed to crafting
+              The creative minds behind Peswani Pixels, committed to crafting
               exceptional brand experiences.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-16 max-w-4xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-1 gap-8 lg:gap-16 max-w-lg mx-auto">
             {/** CEO profile */}
             <div className="relative z-10 group opacity-100 transform-none">
               <div className="relative overflow-hidden h-full">
@@ -162,8 +163,8 @@ const About = () => {
               </div>
             </div>
 
-            {/** CTO Profile */}
-            <div className="relative z-10 group opacity-100 transform-none">
+
+            {/* <div className="relative z-10 group opacity-100 transform-none">
               <div className="relative overflow-hidden h-full">
                 <div className="relative aspect-[9/16] overflow-hidden">
                   <img
@@ -203,16 +204,16 @@ const About = () => {
                   </div>
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
 
-          <div className="mt-20 text-center">
+          {/* <div className="mt-20 text-center">
             <Link to="/contact" className="font-montserrat">
               <Button>
                 Join Our Team <IoIosArrowForward />
               </Button>
             </Link>
-          </div>
+          </div> */}
         </div>
       </section>
     </div>

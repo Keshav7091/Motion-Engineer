@@ -186,12 +186,12 @@ const Contact = () => {
         <div className="container mx-auto px-4 md:px-6">
           <div className="text-center max-w-3xl mx-auto mb-12">
             <h2 className="text-3xl md:text-4xl font-bold font-montserrat mb-6 tracking-tight text-white-theme-pure">
-              Visit Our <span className="shadow-text">Studios</span>
+              Visit Our <span className="shadow-text">Office</span>
             </h2>
-            <p className="text-gray-light font-roboto">
+            {/* <p className="text-gray-light font-roboto">
               We have professional studios in Delhi and Mumbai equipped with the
               latest technology and creative spaces.
-            </p>
+            </p> */}
           </div>
 
           <div className="overflow-hidden rounded-lg border border-gold-accent/30 shadow-gold">

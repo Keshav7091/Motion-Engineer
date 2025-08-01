@@ -16,7 +16,7 @@ const CompanyIntro = () => {
           but stays with them.
         </p>
 
-        <Link to="/contact" className='font-montserrat px-10'>
+        <Link to="/portfolio" className='font-montserrat px-10'>
           <Button>
             See Our Work <FaArrowRight />
           </Button>
