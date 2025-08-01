@@ -1,51 +1,63 @@
 import React from "react";
 import AnimatedCounter from "../components/AnimatedCounter";
 
-import AdidasImg from "../assets/Adidas.jpg";
-import CasioImg from "../assets/casio.webp";
-import AdidasWebp from "../assets/adidas.webp";
-
 const TrustedBy = () => {
   const clientLogos = [
     {
       id: 1,
       name: "Client 1",
-      image: AdidasImg,
+      image: "/brands/com1.webp",
     },
     {
       id: 2,
       name: "Client 2",
-      image: CasioImg,
+      image: "/brands/com2.webp",
     },
     {
       id: 3,
       name: "Client 3",
-      image: AdidasWebp,
+      image: "/brands/com3.webp",
     },
     {
       id: 4,
       name: "Client 4",
-      image: CasioImg,
+      image: "/brands/com4.png",
     },
     {
       id: 5,
       name: "Client 5",
-      image: AdidasWebp,
+      image: "/brands/com5.jpg",
     },
-    {
-      id: 6,
-      name: "Client 6",
-      image: CasioImg,
-    },
+
     {
       id: 7,
       name: "Client 7",
-      image: AdidasWebp,
+      image: "/brands/com7.png",
     },
     {
       id: 8,
       name: "Client 8",
-      image: CasioImg,
+      image: "/brands/com8.png",
+    },
+    {
+      id: 9,
+      name: "Client 9",
+      image: "/brands/com9.webp",
+    },
+    {
+      id: 10,
+      name: "Client 10",
+      image: "/brands/com10.webp",
+    },
+    {
+      id: 11,
+      name: "Client 11",
+      image: "/brands/com11.svg",
+    },
+    {
+      id: 12,
+      name: "Client 12",
+      image: "/brands/com12.svg",
     },
   ];
 
