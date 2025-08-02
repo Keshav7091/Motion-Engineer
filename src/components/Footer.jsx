@@ -33,18 +33,35 @@ const Footer = () => {
                 solutions.
               </p>
               <div className="flex space-x-4">
-                {[FiInstagram, FiFacebook, FiLinkedin, FiYoutube].map(
-                  (Icon, index) => (
-                    <a
-                      key={index}
-                      href="#"
-                      className="w-10 h-10 rounded-full flex items-center justify-center hover:text-white   hover:bg-[#f10000]  transition-all duration-300"
-                      onClick={handleLinkClick}
-                    >
-                      <Icon size={18} />
-                    </a>
-                  )
-                )}
+                {[
+                  {
+                    icon: FiInstagram,
+                    link: "https://www.instagram.com/peswanipixels/",
+                  },
+                  {
+                    icon: FiFacebook,
+                    link: "https://www.facebook.com/peswanipixels/",
+                  },
+                  {
+                    icon: FiLinkedin,
+                    link: "https://www.linkedin.com/in/himanshu-peswani-7a3371345/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+                  },
+                  {
+                    icon: FiYoutube,
+                    link: "https://www.youtube.com/peswanipixels",
+                  },
+                ].map((item, index) => (
+                  <a
+                    key={index}
+                    href={item.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-10 h-10 rounded-full flex items-center justify-center hover:text-white hover:bg-[#f10000] transition-all duration-300"
+                    onClick={handleLinkClick}
+                  >
+                    <item.icon size={18} />
+                  </a>
+                ))}
               </div>
             </div>
           </div>
