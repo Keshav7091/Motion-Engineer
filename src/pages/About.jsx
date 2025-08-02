@@ -40,7 +40,7 @@ const About = () => {
               </p>
 
               <p className="text-gray-light font-roboto mb-4">
-                In today’s fast-paced digital-first world, standing out requires
+                In today's fast-paced digital-first world, standing out requires
                 more than just being online — it demands purposeful strategy,
                 creative storytelling, and consistent execution. That’s exactly
                 what we deliver.
@@ -82,7 +82,7 @@ const About = () => {
               <div className="absolute -bottom-6 -right-6 w-56 h-56 bg-neutral-900 border border-danger/40 rounded-lg p-6 flex items-center justify-center">
                 <div className="text-center">
                   <p className="text-5xl font-bold font-montserrat text-danger shadow-text">
-                    10+
+                    5+
                   </p>
 
                   <p className="text-gray-light font-roboto mt-2">

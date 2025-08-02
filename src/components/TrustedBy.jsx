@@ -132,8 +132,13 @@ const TrustedBy = () => {
                       <img
                         src={client.image}
                         alt={client.name}
-                        className="max-h-full max-w-full object-contain transition-transform duration-300 hover:scale-110"
+                        className={`max-h-full max-w-full object-contain transition-transform duration-300 hover:scale-110 ${
+                          client.image.includes("com11.svg") || client.image.includes("com12.svg")
+                            ? "scale-[1.8] hover:scale-[2.2]"
+                            : ""
+                        }`}
                       />
+
                     </div>
                   </div>
                 ))}

@@ -111,7 +111,7 @@ const Contact = () => {
 
                   <button
                     type="submit"
-                    className="w-full mt-4 flex items-center justify-center gap-5 border border-danger text-danger hover:bg-danger hover:text-black px-5 py-2 rounded-md transition-all duration-300"
+                    className="w-full mt-4 flex items-center justify-center gap-5 border border-[#f10000] text-[#f10000] hover:bg-[#f10000] hover:text-black px-5 py-2 rounded-md transition-all duration-300"
                   >
                     <FiSend size={15} />
                     <span className="font-semibold text-sm">Send Message</span>
