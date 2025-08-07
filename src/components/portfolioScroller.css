@@ -1,0 +1,54 @@
+.scroller-track {
+  overflow: hidden;
+  position: relative;
+  padding: 10px 0;
+}
+
+.scroller-content {
+  display: flex;
+  gap: 60px;
+  animation: scrollLinear 20s linear infinite;
+}
+
+.scroller-image-container {
+  flex: none;
+  width: 50vw;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 16px;
+  background-color: #1e1e1e;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease;
+}
+
+.scroller-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* Scroll animation */
+@keyframes scrollLinear {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .scroller-image-container {
+    width: 100vw;
+  }
+}
+
+@media (max-width: 480px) {
+  .scroller-image-container {
+    width: 100vw;
+  }
+}

@@ -5,8 +5,14 @@ const VideoPlay = ({ videoSrc }) => {
     <section className='relative py-6 sm:py-8 md:py-12 text-white'>
       <div className='container mx-auto px-2 sm:px-4 md:px-6'>
         <div className='max-w-3xl mx-auto'>
-          <div className='w-full max-w-2xl mx-auto rounded overflow-hidden shadow-gold'>
-            <video autoPlay muted loop playsInline className='w-full h-auto'>
+          <div className='w-full max-w-2xl mx-auto rounded overflow-hidden shadow-gold max-h-[600px]'>
+            <video
+              autoPlay
+              muted
+              loop
+              playsInline
+              className='w-full h-auto object-cover max-h-[600px]'
+            >
               <source src={videoSrc} type="video/mp4" />
               Your browser does not support the video tag.
             </video>
