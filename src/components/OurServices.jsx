@@ -125,17 +125,23 @@ const OurServices = () => {
         </div>
 
         {/* CTA Button */}
-        <div className="w-full flex justify-center mt-12">
-          <Link to="/services">
-            <button className="group relative overflow-hidden border border-danger text-danger px-10 py-3 rounded-md text-base cursor-pointer font-medium">
-              <span className="absolute inset-0 bg-danger translate-y-[-100%] group-hover:translate-y-0 transition-transform duration-300 ease-in-out z-0" />
-              <span className="relative z-10 flex items-center gap-5 group-hover:text-black transition-colors duration-300">
+        <div className="w-full flex justify-center mt-12 px-5">
+          <Link to="/services" className="w-full sm:w-auto">
+            <button className="group relative overflow-hidden border border-danger text-danger w-full sm:w-auto px-4 sm:px-10 py-3 rounded-md text-xs sm:text-base cursor-pointer font-medium whitespace-nowrap">
+              <span className="absolute inset-0 bg-danger -translate-y-full group-hover:translate-y-0 transition-transform duration-300 ease-in-out z-0" />
+              <span className="relative z-10 flex items-center justify-center gap-2 group-hover:text-black transition-colors duration-300">
                 See What We Can Do For You
-                <FiArrowRight className="group-hover:translate-x-1 transition-all duration-300" />
+                <FiArrowRight className="shrink-0 group-hover:translate-x-1 transition-all duration-300" />
               </span>
             </button>
           </Link>
         </div>
+
+
+
+
+
+
       </div>
     </section>
   );
