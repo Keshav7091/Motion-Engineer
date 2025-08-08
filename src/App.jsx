@@ -10,6 +10,7 @@ import About from "./pages/About"
 import Services from "./pages/Services"
 import Contact from "./pages/Contact"
 import Portfolio from "./pages/Portfolio"
+import BusinessProfile from './pages/BusinessProfile'
 
 function App() {
 
@@ -22,6 +23,7 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/services" element={<Services />} />
         <Route path="/portfolio" element={<Portfolio />} />
+        <Route path='/businessprofile' element={ <BusinessProfile /> } />
         <Route path="/contact" element={<Contact />} />
       </Routes>
       <Footer />
