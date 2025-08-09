@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import logo from "../assets/logo.jpg";
 import { Link, NavLink } from "react-router-dom";
 import Button from "./Button";
 import { IoIosArrowForward } from "react-icons/io";
@@ -16,12 +15,18 @@ const Navbar = () => {
     setIsMobileMenuOpen(false);
   };
 
-  const navItems = ["Home", "About", "Services", "Portfolio", "BusinessProfile", "Contact"];
+  // Updated with name + path (space in Business Profile)
+  const navItems = [
+    { name: "Home", path: "/" },
+    { name: "About", path: "/about" },
+    { name: "Services", path: "/services" },
+    { name: "Portfolio", path: "/portfolio" },
+    { name: "Business Profile", path: "/businessprofile" },
+    { name: "Contact", path: "/contact" },
+  ];
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-black py-5 bg-gradient-to-b from-black to-black/80 shadow-lg border-b">
-      
-
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex items-center justify-between relative">
           {/* Logo */}
@@ -36,20 +41,19 @@ const Navbar = () => {
             </h1>
           </Link>
 
-
           {/* Desktop Nav */}
           <nav className="hidden md:flex items-center space-x-8 text-sm font-medium">
             {navItems.map((item) => (
               <NavLink
-                key={item}
-                to={item === "Home" ? "/" : `/${item.toLowerCase()}`}
+                key={item.name}
+                to={item.path}
                 className={({ isActive }) =>
                   isActive
                     ? "text-danger font-montserrat"
                     : "text-gray-300 hover:text-[#f10000] transition duration-200 font-montserrat"
                 }
               >
-                {item}
+                {item.name}
               </NavLink>
             ))}
 
@@ -60,7 +64,7 @@ const Navbar = () => {
             </Link>
           </nav>
 
-          {/* Mobile Menu Toggle Button */}
+          {/* Mobile Menu Toggle */}
           <div className="md:hidden z-50">
             <button onClick={toggleMenu} className="text-white">
               {isMobileMenuOpen ? <HiX size={28} /> : <HiOutlineMenu size={28} />}
@@ -71,12 +75,12 @@ const Navbar = () => {
 
       {/* Mobile Nav */}
       {isMobileMenuOpen && (
-        <div className="fixed top-0 left-0 w-full h-screen bg-black/40 backdrop-blur z-40 pt-16 pb-10 overflow-y-auto">
+        <div className="fixed top-0 left-0 w-full h-screen bg-black/75 backdrop-blur z-40 pt-16 pb-10 overflow-y-auto">
           <div className="px-6 flex flex-col space-y-5 mt-8">
             {navItems.map((item) => (
               <NavLink
-                key={item}
-                to={item === "Home" ? "/" : `/${item.toLowerCase()}`}
+                key={item.name}
+                to={item.path}
                 className={({ isActive }) =>
                   isActive
                     ? "block text-danger py-3 text-center text-xl font-medium font-montserrat"
@@ -84,7 +88,7 @@ const Navbar = () => {
                 }
                 onClick={closeMenu}
               >
-                {item}
+                {item.name}
               </NavLink>
             ))}
 

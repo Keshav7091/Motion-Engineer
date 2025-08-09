@@ -54,11 +54,11 @@ const BusinessProfile = () => {
         <div className="container max-w-4xl mx-auto">
           <div className="text-center mb-8">
             <div className="inline-block">
-              <h2 className="text-4xl md:text-5xl font-bold font-montserrat mb-2 tracking-tight">
+              <h2 className="text-3xl md:text-4xl font-bold font-montserrat tracking-tight">
                 <span className="text-danger">Peswani Pixels </span> - Elevate
                 Your Brand Digitally
               </h2>
-              <div className="w-24 h-1 bg-danger mt-2"></div>
+              {/* <div className="w-24 h-1 bg-danger mt-2"></div> */}
             </div>
           </div>
           <p className="text-xl text-gray-light font-roboto mb-8 max-w-5xl mx-auto">
@@ -73,13 +73,13 @@ const BusinessProfile = () => {
       <section className="text-white bg-black-theme-rich py-20 relative overflow-hidden">
         <div className="container mx-auto px-4 md:px-6 relative z-10">
           {/* Title */}
-          <div className="max-w-3xl mx-auto mb-24 max-w-5xl text-center">
+          <div className="max-w-5xl mx-auto mb-24 text-center">
             <div className="text-center mb-8">
               <div className="inline-block">
-                <h2 className="text-4xl md:text-5xl font-bold font-montserrat mb-2 tracking-tight">
+                <h2 className="text-3xl md:text-4xl font-bold font-montserrat tracking-tight">
                   <span className="text-danger">About</span> Us
                 </h2>
-                <div className="w-24 h-1 bg-danger mt-2"></div>
+                {/* <div className="w-24 h-1 bg-danger mt-2"></div> */}
               </div>
             </div>
             <p className="text-gray-light font-roboto text-lg">
@@ -97,13 +97,13 @@ const BusinessProfile = () => {
       <section className="text-white bg-black-theme-poor py-20 relative overflow-hidden">
         <div className="container mx-auto px-4 md:px-6 relative z-10">
           {/* Title */}
-          <div className="max-w-3xl mx-auto mb-24 max-w-5xl text-center">
+          <div className="max-w-5xl mx-auto mb-24 text-center">
             <div className="text-center mb-8">
               <div className="inline-block">
-                <h2 className="text-4xl md:text-5xl font-bold font-montserrat mb-2 tracking-tight">
+                <h2 className="text-3xl md:text-4xl font-bold font-montserrat tracking-tight">
                   <span className="text-danger">Welcome </span> Message
                 </h2>
-                <div className="w-24 h-1 bg-danger mt-2"></div>
+                {/* <div className="w-24 h-1 bg-danger mt-2"></div> */}
               </div>
             </div>
             <p className="text-gray-light font-roboto text-lg">
@@ -123,11 +123,11 @@ const BusinessProfile = () => {
             <div>
               <div className="text-center mb-8">
                 <div className="inline-block">
-                  <h2 className="text-3xl md:text-4xl font-bold font-montserrat mb-2 tracking-tight">
+                  <h2 className="text-2xl md:text-3xl font-bold font-montserrat mb-2 tracking-tight">
                     <span className="text-danger">Our</span> Vision
                   </h2>
 
-                  <div className="w-10 h-1 bg-danger mt-2"></div>
+                  {/* <div className="w-10 h-1 bg-danger mt-2"></div> */}
                 </div>
               </div>
               <ul className="list-disc pl-5 space-y-5">
@@ -145,7 +145,7 @@ const BusinessProfile = () => {
             <div>
               <div className="text-center mb-8">
                 <div className="inline-block">
-                  <h2 className="text-3xl md:text-4xl font-bold font-montserrat mb-2 tracking-tight">
+                  <h2 className="text-2xl md:text-3xl font-bold font-montserrat mb-2 tracking-tight">
                     <span className="text-danger">Our</span> Mission
                   </h2>
 
@@ -173,11 +173,11 @@ const BusinessProfile = () => {
         <div className="container mx-auto px-4 md:px-6">
           <div className="text-center mb-10">
             <div className="inline-block">
-              <h2 className="text-4xl md:text-5xl font-bold font-montserrat mb-2 tracking-tight">
+              <h2 className="text-3xl md:text-4xl font-bold font-montserrat mb-2 tracking-tight">
                 <span className="text-danger">Our</span> Services
               </h2>
 
-              <div className="w-16 h-1 bg-danger mt-2"></div>
+              {/* <div className="w-16 h-1 bg-danger mt-2"></div> */}
             </div>
           </div>
           <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 cursor-pointer">
@@ -201,10 +201,10 @@ const BusinessProfile = () => {
 
           <div className="text-center mb-8">
             <div className="inline-block">
-              <h2 className="text-4xl md:text-5xl font-bold font-montserrat mb-2 tracking-tight">
+              <h2 className="text-3xl md:text-4xl font-bold font-montserrat mb-2 tracking-tight">
                 <span className="text-danger">Client</span> Benefits
               </h2>
-              <div className="w-24 h-1 bg-danger mt-2"></div>
+              {/* <div className="w-24 h-1 bg-danger mt-2"></div> */}
             </div>
           </div>
 
